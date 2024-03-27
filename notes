@@ -1,0 +1,21 @@
+Provider: Think of a provider as a helper for Terraform. It's like a plugin that helps Terraform communicate with different cloud or infrastructure platforms such as AWS, Azure, or Google Cloud.
+
+Resource: A resource is something you want Terraform to manage for you, like a virtual machine, a database, or a storage bucket. Each resource has a type and settings that you define in your Terraform code.
+
+Module: A module is like a package of Terraform code that you can reuse. It bundles together configurations for different parts of your infrastructure, making it easier to share and maintain them.
+
+Configuration File: Terraform uses configuration files to describe what you want your infrastructure to look like. These files contain settings for providers, resources, variables, and more.
+
+Variable: Variables are like placeholders in your Terraform code. They allow you to specify values outside of your code, making your configurations more flexible and reusable.
+
+Output: Outputs are values that Terraform gives you after it's done creating or updating your infrastructure. They're helpful for displaying information or passing values to other parts of your setup.
+
+State File: Terraform keeps track of the current state of your infrastructure in a file. This file helps Terraform understand what resources exist and what changes need to be made.
+
+Plan: A Terraform plan is like a blueprint for the changes Terraform will make to your infrastructure. It shows you what Terraform will do before it actually does it.
+
+Apply: Applying a Terraform plan means telling Terraform to go ahead and make the changes outlined in the plan. It creates, updates, or deletes resources as needed.
+
+Workspace: Workspaces let you manage different environments (like development, staging, and production) separately. They help keep your configurations organized and isolated.
+
+Remote Backend: A remote backend is a place to store your Terraform state files that's not on your computer. It's often used for better collaboration and security, with options like Amazon S3 or Azure Blob Storage.
