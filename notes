@@ -19,3 +19,8 @@ Apply: Applying a Terraform plan means telling Terraform to go ahead and make th
 Workspace: Workspaces let you manage different environments (like development, staging, and production) separately. They help keep your configurations organized and isolated.
 
 Remote Backend: A remote backend is a place to store your Terraform state files that's not on your computer. It's often used for better collaboration and security, with options like Amazon S3 or Azure Blob Storage.
+
+multiproviders: In Terraform, you can manage resources across different cloud providers like AWS and Azure in a single project by defining each provider in a provider.tf file and specifying the provider for each resource accordingly.
+
+multiregion:  o set up infrastructure across different regions using Terraform, you can use aliases. Aliases let you refer to the same type of resource in various regions, making it easy to deploy resources in different regions within one Terraform setup. This simplifies managing multi-region setups, ensuring your infrastructure is consistent and scalable.
+
