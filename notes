@@ -25,3 +25,15 @@ multiproviders: In Terraform, you can manage resources across different cloud pr
 
 multiregion:  To set up infrastructure across different regions using Terraform, you can use aliases. Aliases let you refer to the same type of resource in various regions, making it easy to deploy resources in different regions within one Terraform setup. This simplifies managing multi-region setups, ensuring your infrastructure is consistent and scalable.
 
+In Terraform, .tfvars files (typically with a .tfvars extension) are used to set specific values for input variables defined in your Terraform configuration.
+
+They allow you to separate configuration values from your Terraform code, making it easier to manage different configurations for different environments (e.g., development, staging, production) or to store sensitive information without exposing it in your code.
+
+Conditional expressions in Terraform are used to define conditional logic within your configurations. They allow you to make decisions or set values based on conditions. Conditional expressions are typically used to control whether resources are created or configured based on the evaluation of a condition.
+
+The syntax for a conditional expression in Terraform is:
+
+condition ? true_val : false_val
+condition is an expression that evaluates to either true or false.
+true_val is the value that is returned if the condition is true.
+false_val is the value that is returned if the condition is false.
