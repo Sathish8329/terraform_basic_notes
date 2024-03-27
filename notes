@@ -7,7 +7,8 @@ Module: A module is like a package of Terraform code that you can reuse. It bund
 Configuration File: Terraform uses configuration files to describe what you want your infrastructure to look like. These files contain settings for providers, resources, variables, and more.
 
 Variable: Variables are like placeholders in your Terraform code. They allow you to specify values outside of your code, making your configurations more flexible and reusable.
-
+Input variables are used to parameterize your Terraform configurations. They allow you to pass values into your modules or configurations from the outside. Input variables can be defined within a module or at the root level of your configuration. 
+Output variables allow you to expose values from your module or configuration, making them available for use in other parts of your Terraform setup
 Output: Outputs are values that Terraform gives you after it's done creating or updating your infrastructure. They're helpful for displaying information or passing values to other parts of your setup.
 
 State File: Terraform keeps track of the current state of your infrastructure in a file. This file helps Terraform understand what resources exist and what changes need to be made.
